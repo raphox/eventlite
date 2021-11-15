@@ -1,0 +1,8 @@
+<h1 class="logo">Events</h1>
+
+<%= javascript_pack_tag 'screens/Events' %>
+
+<%= content_tag :div,
+  id: "events_data",
+  data: @events.to_json do %>
+<% end %>
